@@ -6,22 +6,22 @@
 # 1) Crear una lista que contenga nombres de ciudades del mundo que contenga más de 5 elementos e imprimir por pantalla
 
 # In[3]:
-
-
+list = ["Buenos Aires", "Paris", "Montecarlo", "Mendoza", "Junin"]
+print(list)
 
 
 # 2) Imprimir por pantalla el segundo elemento de la lista
 
 # In[4]:
 
-
+print(list[1])
 
 
 # 3) Imprimir por pantalla del segundo al cuarto elemento
 
 # In[8]:
 
-
+print(list[1:4])
 
 
 
@@ -29,7 +29,7 @@
 
 # In[12]:
 
-
+print(type(list))
 
 
 
@@ -38,7 +38,7 @@
 # In[14]:
 
 
-
+print(list [2:])
 
 
 # 6) Visualizar los primeros 4 elementos de la lista
@@ -46,40 +46,39 @@
 # In[15]:
 
 
-
-    
+print(list[:4])
 
 
 # 7) Agregar una ciudad más a la lista que ya exista y otra que no ¿Arroja algún tipo de error?
 
 # In[16]:
 
+list.append("Ciudad de Mexico")
+# In[17]:
 
+list.append("Montevideo")
 
+# In[18]:
 
-
-
-
-
+print(list)
 
 # 8) Agregar otra ciudad, pero en la cuarta posición
 
 # In[20]:
 
-
-
-
+list.insert(3, "Quito")
 
 # In[21]:
 
-
+print(list)
 
 
 # 9) Concatenar otra lista a la ya creada
 
 # In[22]:
 
-
+list.extend(["Cordoba", "San Luis", "Punta del este"])
+print(list)
 
 
 # 10) Encontrar el índice de la ciudad que en el punto 7 agregamos duplicada. ¿Se nota alguna particularidad?
@@ -87,14 +86,14 @@
 # In[23]:
 
 
-
+print(list.index("Montevideo"))
 
 
 # 11) ¿Qué pasa si se busca un elemento que no existe?
 
 # In[24]:
 
-
+print(list.index("Salta"))
 
 
 
@@ -102,9 +101,9 @@
 
 # In[25]:
 
-
-
-
+list.remove("Buenos Aires")
+# In[26]:
+print(list)
 
 # 13) ¿Qué pasa si el elemento a eliminar no existe?
 
